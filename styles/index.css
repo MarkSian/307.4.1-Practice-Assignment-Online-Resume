@@ -32,13 +32,18 @@ img {border: 2px solid #3F4F44;
 
 }
 /*Formats box_1 to box_3*/
-.section{
+.section_1{
     display: flex;
     flex-direction:row;
     flex-flow: wrap;
     background-color: #A27B5C;
     padding:5px;
+}
 
+.section_2 h2 {
+    display: flex;
+    justify-content: center;
+    
 }
 /*Name and Title*/
 .box_1{
@@ -104,9 +109,16 @@ ul li{
 .employment{
     color: #DCD7C9;
     font-size: 1 rem;
-    text-align: center;
+    text-align: left;
 }
 
-span {
+.employment_dates {
     float: right;
+}
+
+hr {
+    border: 0px solid #3F4F44;
+    height: 1px;
+    background: #3F4F44; 
+    width: 60%;
 }
