@@ -1,0 +1,112 @@
+* {
+    font-family: 'Saira Semi Condensed';
+}
+
+body {
+    background-color:#2C3930 ;
+    color: #DCD7C9;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Format Webpage*/
+.main_container {
+    align-content: center;
+    max-width: 1000px;
+    margin: 0 auto; 
+    font-family: Arial, sans-serif;
+    background-color: #A27B5C; 
+    border: 5px solid #DCD7C9;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px ;
+    box-shadow: 5px 5px 10px;
+}
+
+img {border: 2px solid #3F4F44;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black;
+    height:10rem;
+
+
+
+}
+/*Formats box_1 to box_3*/
+.section{
+    display: flex;
+    flex-direction:row;
+    flex-flow: wrap;
+    background-color: #A27B5C;
+    padding:5px;
+
+}
+/*Name and Title*/
+.box_1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #A27B5C;
+    border: 2px solid #3F4F44;
+    border-radius: 5px ;
+    margin: 2px;
+    padding: 5px;
+    width: 500px;
+
+}
+
+/*Contact Information*/
+.box_2{
+    background-color: #A27B5C;
+    border: 2px solid #3F4F44;
+    border-radius: 5px ;
+    margin: 2px;
+    padding: 5px;  
+    flex-grow: 1;
+}
+
+/*Candidate Summary*/
+.box_3{
+    background-color: #A27B5C;
+    border: 2px solid #3F4F44;
+    border-radius: 5px ;
+    margin: 2px;
+    padding: 5px;
+}
+
+
+.my_info {
+    margin: 0;
+    line-height: 10px;
+}
+
+.contact_info {
+    line-height: 20px;
+}
+
+a {
+    color: #DCD7C9;
+}
+
+a:hover {
+    color: #3F4F44;
+}
+
+ul {
+    text-align: left;
+    padding: 0 10px
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.employment{
+    color: #DCD7C9;
+    font-size: 1 rem;
+    text-align: center;
+}
+
+span {
+    float: right;
+}
