@@ -13,7 +13,8 @@ body {
 /*Format Webpage*/
 .main_container {
     align-content: center;
-    max-width: 1000px;
+    max-width: 70%;
+    max-height: 80%;
     margin: 0 auto; 
     font-family: Arial, sans-serif;
     background-color: #A27B5C; 
@@ -121,4 +122,28 @@ hr {
     height: 1px;
     background: #3F4F44; 
     width: 80%;
+}
+
+.content_container {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section_2 {
+    flex-grow: 1;
+}
+
+aside {
+    background-color: #A27B5C;
+    border-left: 1px solid #3F4F44;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 5px;
 }
