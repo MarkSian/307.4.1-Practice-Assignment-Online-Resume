@@ -7,6 +7,9 @@ body {
     color: #DCD7C9;
     margin: 0;
     padding: 0;
+    font-size: 18px;
+    line-height: 1.6; 
+    
 }
 
 
@@ -14,7 +17,6 @@ body {
 .main_container {
     align-content: center;
     max-width: 70%;
-    max-height: 80%;
     margin: 0 auto; 
     font-family: Arial, sans-serif;
     background-color: #A27B5C; 
@@ -24,13 +26,11 @@ body {
     box-shadow: 5px 5px 10px;
 }
 
+/*pfp image */
 img {border: 2px solid #3F4F44;
     border-radius: 20px;
     box-shadow: 1px 1px 1px black;
     height:10rem;
-
-
-
 }
 /*Formats box_1 to box_3*/
 .section_1{
@@ -40,11 +40,28 @@ img {border: 2px solid #3F4F44;
     background-color: #A27B5C;
     padding:5px;
 }
+/*Allows for section 2 and the aside to format to that of the wireframe*/
+.main_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
+/*Sets all h2 tags to be centered*/
 .section_2 h2 {
     display: flex;
     justify-content: center;
     
+}
+
+.section_2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2px;
+    padding: 5px;
+    flex-grow: 1;
 }
 /*Name and Title*/
 .box_1{
@@ -57,6 +74,7 @@ img {border: 2px solid #3F4F44;
     margin: 2px;
     padding: 5px;
     width: 500px;
+    flex-grow: 1;
 
 }
 
@@ -79,44 +97,54 @@ img {border: 2px solid #3F4F44;
     padding: 5px;
 }
 
+/*targets span so that the date can be on the other side of resume*/
+.experience_dates {
+    float: right;
+}
 
+/*Formats both elements to be closer to one another*/
 .my_info {
     margin: 0;
     line-height: 10px;
 }
 
+/*spaces the list to be closer*/
 .contact_info {
     line-height: 20px;
 }
+/*Format the aside */
+aside {
+    background-color: #A27B5C;
+    border-left: 1px solid #3F4F44;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 10px;
+    flex: 1; /*adding this allowed for the h2 tags to center in the aside*/
+}
 
+/*style <a> tags */
 a {
     color: #DCD7C9;
+    text-decoration: none;
 }
-
+/*animations <a> tags upon hover*/
 a:hover {
     color: #3F4F44;
+    text-decoration: underline;
 }
 
+/*text allignments for all ul*/
 ul {
     text-align: left;
     padding: 0 10px
 }
 
+/*stops bullet list styles*/
 ul li{
-    text-decoration: none;
     list-style: none;
 }
 
-.employment{
-    color: #DCD7C9;
-    font-size: 1 rem;
-    text-align: left;
-}
-
-.employment_dates {
-    float: right;
-}
-
+/*style the hr tag so that its not a full line*/
 hr {
     border: 0px solid #3F4F44;
     height: 1px;
@@ -124,26 +152,6 @@ hr {
     width: 80%;
 }
 
-.content_container {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-}
 
-.main_content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
-.section_2 {
-    flex-grow: 1;
-}
 
-aside {
-    background-color: #A27B5C;
-    border-left: 1px solid #3F4F44;
-    border-radius: 5px;
-    margin: 2px;
-    padding: 5px;
-}
